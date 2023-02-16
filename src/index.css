@@ -14,7 +14,12 @@ code {
     monospace;
 }
 
-h2, p {
+h2, p, li {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }

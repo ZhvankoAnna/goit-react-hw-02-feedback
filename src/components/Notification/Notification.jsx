@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { BiMessageSquareError } from 'react-icons/bi';
 import css from 'components/Notification/notification.module.css';
 
@@ -11,3 +12,7 @@ const Notification = ({ message }) => {
 };
 
 export default Notification;
+
+Notification.propTypes = {
+  message: PropTypes.string.isRequired,
+};
