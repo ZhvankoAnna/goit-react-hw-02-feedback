@@ -20,14 +20,14 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       </li>
       <li className={css.item}>
         <BiAbacus className={css.icon} />
-        <p className={css.text}>Total: {total()}</p>
+        <p className={css.text}>Total: {total}</p>
       </li>
       <li className={css.item}>
         {' '}
         <BiBarChartAlt2 className={css.icon} />
         <p className={css.text}>
           Positive Feedback:{' '}
-          {total() === 0 ? '0' : Math.round(positivePercentage())}%
+          {total === 0 ? '0' : Math.round(positivePercentage)}%
         </p>
       </li>
     </ul>
